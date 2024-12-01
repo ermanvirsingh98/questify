@@ -1,7 +1,0 @@
-{
-    "functions": {
-        "src/api/questions.ts": {
-            "maxDuration": 60
-      }
-    }
-  }
