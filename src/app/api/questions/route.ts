@@ -3,9 +3,6 @@ import { strict_output } from "@/lib/gpt";
 import { NextResponse } from "next/server";
 import { ZodError } from "zod";
 
-export const runtime = "nodejs";
-export const maxDuration = 60;
-
 export async function POST(req: Request, res: Response) {
   try {
     const body = await req.json();
