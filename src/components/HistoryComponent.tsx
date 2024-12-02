@@ -13,6 +13,9 @@ const HistoryComponent = async ({ limit, userId }: Props) => {
         take: limit,
         where: {
             userId,
+            questions: {
+                some: {},  // Filters out games where questions array is empty
+            },
         },
         orderBy: {
             timeStarted: "desc",

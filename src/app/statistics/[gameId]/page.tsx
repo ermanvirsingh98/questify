@@ -50,8 +50,10 @@ const Statistics = async ({ params: { gameId } }: Props) => {
     }
     accuracy = Math.round(accuracy * 100) / 100;
 
+    console.log("game", game);
     return (
         <>
+
             <div className="p-8 mx-auto max-w-7xl">
                 <div className="flex items-center justify-between space-y-2">
                     <h2 className="text-3xl font-bold tracking-tight">Summary</h2>
@@ -73,6 +75,7 @@ const Statistics = async ({ params: { gameId } }: Props) => {
                 </div>
                 <QuestionsList questions={game.questions} />
             </div>
+
         </>
     );
 };
